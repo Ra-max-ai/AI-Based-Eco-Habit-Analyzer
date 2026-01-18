@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eco Impact Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <h1>🌱 Eco Impact Analyzer</h1>
+    <p class="subtitle">Understand your lifestyle impact & improve it</p>
+
+    <div class="card">
+
+      <div class="grid">
+        <div>
+          <label>Shower Duration</label>
+          <select id="shower">
+            <option value="">Select</option>
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Transportation</label>
+          <select id="transport">
+            <option value="">Select</option>
+            <option value="public">Public Transport</option>
+            <option value="car">Private Car</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Food Habit</label>
+          <select id="food">
+            <option value="">Select</option>
+            <option value="veg">Vegetarian</option>
+            <option value="nonveg">Non-Vegetarian</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Electricity Usage</label>
+          <select id="electricity">
+            <option value="">Select</option>
+            <option value="low">Low</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Plastic Usage</label>
+          <select id="plastic">
+            <option value="">Select</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Shopping Frequency</label>
+          <select id="shopping">
+            <option value="">Select</option>
+            <option value="low">Low</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="analyzeBtn">Analyze My Impact</button>
+
+    </div>
+
+    <div id="impactCard" class="result hidden">
+      <h2>Your Impact</h2>
+      <div id="impactOutput"></div>
+    </div>
+
+    <div id="challengeCard" class="result hidden">
+      <h2>7-Day Eco Challenges</h2>
+      <ul id="challengeOutput"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
